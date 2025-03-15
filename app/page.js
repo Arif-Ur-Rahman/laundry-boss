@@ -5,6 +5,7 @@ import ExpertLaundry from './components/expert-laundry';
 import Header from './components/header';
 import Hero from './components/hero';
 import Services from './components/services';
+import Stores from './components/Stores';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Barbar />
       <ExpertLaundry />
       <CoverageArea />
+      <Stores />
     </div>
   );
 }
