@@ -8,7 +8,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full py-4 bg-gradient-to-br from-blue-50 to-white">
+    <header className="w-full py-4 bg-gradient-to-br from-blue-100 to-white">
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
