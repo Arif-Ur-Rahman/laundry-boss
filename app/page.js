@@ -1,4 +1,5 @@
 // app/page.js
+import CoverageArea from './components/Area';
 import Barbar from './components/Barbar';
 import ExpertLaundry from './components/expert-laundry';
 import Header from './components/header';
@@ -13,6 +14,7 @@ export default function Home() {
       <Services />
       <Barbar />
       <ExpertLaundry />
+      <CoverageArea />
     </div>
   );
 }
