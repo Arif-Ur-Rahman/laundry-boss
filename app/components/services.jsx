@@ -4,7 +4,6 @@ import {
   Shirt,
   Sofa,
   WashingMachine,
-  Clothes,
   BedDouble,
 } from "lucide-react";
 
@@ -53,41 +52,30 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="relative top-[150px] left-[120px]">
-      <div
-        className="flex flex-col justify-center items-center"
-        style={{
-          width: "1200px",
-          height: "660px",
-          gap: "60px",
-        }}
-      >
+    <section className="relative px-4 py-12 md:py-24 lg:py-32">
+      <div className="max-w-screen-xl mx-auto flex flex-col justify-center items-center space-y-6 md:space-y-12">
         {/* Sub Heading */}
-        <p className="text-gray-500 text-lg">
+        <p className="text-gray-500 text-base md:text-lg text-center">
           Simple Laundry and Dry Cleaning Services
         </p>
 
         {/* Main Heading */}
-        <h2 className="text-4xl font-bold text-[#3546AE]">Our services</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3546AE] text-center">
+          Our Services
+        </h2>
 
         {/* Services Grid */}
-        <div
-          className="grid grid-cols-4 gap-[20px]"
-          style={{
-            width: "1200px",
-            height: "500px",
-          }}
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full px-4 md:px-0">
           {services.map((service, index) => (
             <div
               key={index}
               className={`flex flex-col items-center justify-between rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ${service.bgColor}`}
             >
-              <div className="flex justify-center items-center w-full h-[70%] p-4">
+              <div className="flex justify-center items-center w-full py-10 md:py-14">
                 {service.icon}
               </div>
-              <div className="w-full bg-white py-4 h-[30%] flex justify-center items-center">
-                <h3 className="text-lg font-medium text-gray-800">
+              <div className="w-full bg-white py-4 flex justify-center items-center">
+                <h3 className="text-md md:text-lg font-medium text-gray-800 text-center">
                   {service.title}
                 </h3>
               </div>
